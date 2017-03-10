@@ -21,7 +21,7 @@ local function is_restricted(room, who)
 
 	-- Don't evaluate exceptions
 	if restrict_excepts:contains(room) then
-		module:log("debug", "Room %s is amongst restriction exceptions", room())
+		module:log("debug", "Room %s is amongst restriction exceptions", room)
 		return nil;
 	end
 
